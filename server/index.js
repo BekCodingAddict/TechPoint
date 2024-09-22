@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const port = 5001;
+const port = 5000;
 
 app.get("/", (req, res) => {
   res.send("API is rurring...");
@@ -19,5 +19,3 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Back-End Server runs on port: ${port}! `);
 });
-
-console.log("Hello");
