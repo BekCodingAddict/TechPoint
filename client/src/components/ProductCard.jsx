@@ -19,7 +19,12 @@ const ProductCard = ({ product, loading }) => {
         p={"4"}
         shadow={"md"}
       >
-        <Image />
+        <Image
+          src={product.images[0]}
+          fallbackSrc="http://via.placeholder.com/150"
+          alt={product.name}
+          height={"200px"}
+        />
         {product.stock < 5 ? (
           <Badge colorScheme="yellow">only {product.stock}left</Badge>
         ) : product.stock < 1 ? (
