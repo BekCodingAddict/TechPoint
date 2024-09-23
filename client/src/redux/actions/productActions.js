@@ -1,6 +1,5 @@
 import {
   setLoading,
-  setLoading,
   setError,
   setPagination,
   setProducts,

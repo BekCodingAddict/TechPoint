@@ -10,7 +10,7 @@ export const initialState = {
 };
 
 export const productsSlice = createSlice({
-  nanme: "products",
+  name: "products",
   initialState,
   reducers: {
     setLoading: (state) => {
