@@ -12,7 +12,7 @@ function ProductsScreen() {
   );
 
   useEffect(() => {
-    dispatch(getProducts());
+    dispatch(getProducts(1));
   }, [dispatch]);
   return (
     <>

@@ -27,6 +27,6 @@ const getPropducts = async (req, res) => {
   });
 };
 
-productRoutes.route("/:page/perPage").get(getPropducts);
+productRoutes.route("/:page/:perPage").get(getPropducts);
 productRoutes.route("/").get(getPropducts);
 export default productRoutes;
