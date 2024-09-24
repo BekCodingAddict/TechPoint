@@ -6,28 +6,20 @@ import { toggleFavorites } from "../redux/actions/productActions";
 
 const Header = () => {
   const dispatch = useDispatch();
-  const { favoritesToggle } = useSelector((state) => state.product);
+  const { favoritesToggled } = useSelector((state) => state.product);
   return (
     <>
-      {favoritesToggle ? (
+      {favoritesToggled ? (
         <IconButton
-          icon={
-            <MdOutlineFavorite
-              size={"20px"}
-              onClick={() => dispatch(toggleFavorites(false))}
-            />
-          }
+          icon={<MdOutlineFavorite size={"20px"} />}
           variant={"ghost"}
+          onClick={() => dispatch(toggleFavorites(false))}
         />
       ) : (
         <IconButton
-          icon={
-            <MdOutlineFavorite
-              size={"20px"}
-              onClick={() => dispatch(toggleFavorites(true))}
-            />
-          }
+          icon={<MdOutlineFavoriteBorder size={"20px"} />}
           variant={"ghost"}
+          onClick={() => dispatch(toggleFavorites(true))}
         />
       )}
     </>

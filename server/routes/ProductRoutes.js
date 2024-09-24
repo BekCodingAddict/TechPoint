@@ -21,10 +21,6 @@ const getPropducts = async (req, res) => {
   } else {
     res.json({ products, pagination: {} });
   }
-  res.json({
-    products,
-    pagination: {},
-  });
 };
 
 productRoutes.route("/:page/:perPage").get(getPropducts);
