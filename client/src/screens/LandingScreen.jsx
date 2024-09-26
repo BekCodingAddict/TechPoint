@@ -61,7 +61,7 @@ const LandingScreen = () => (
       </Box>
       <Flex flex={"1"} overflow={"hidden"}>
         <Image
-          src={mode("images/landing-light.jpg", "images/laning-dark.jpg")}
+          src={mode("images/landing-light.jpg", "images/landing-dark.jpg")}
           fallback={<Skeleton />}
           maxH={"550px"}
           minW={"300px"}
